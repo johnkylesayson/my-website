@@ -1,15 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple webpage using HTML, CSS, and JavaScript.</p>
-    <button onclick="showMessage()">Click Me</button>
-    <script src="script.js"></script>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>J</span>ohn <span>K</span>yle</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>John Kyle Sayson <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>We provide comprehensive digital solutions to help your business thrive in the online world. Our team of experts delivers tailored services to meet your unique needs and goals, ensuring quality and innovation in every project.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>WEB DEVELOPMENT</h2>
+          <p>Turn ideas into reality with robust, scalable websites and web applications. We use cutting-edge technologies to build fast, secure, and feature-rich digital experiences.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Web Design</h2>
+          <p>We craft visually captivating, user-friendly websites that reflect your brand’s identity. Our designs are responsive, modern, and optimized for seamless navigation across all devices.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Maintenance & Support</h2>
+          <p>Security updates & backups 
+            Hosting management
+            24/7 monitoring
+            Feature enhancements</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>SEO & Content Strategy</h2>
+          <p>Keyword research & on-page SEO
+            Technical audits & site structure
+            Blog/content planning
+            Local SEO & Google Business Profiles</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>SEO & Content Strategy Services</h2>
+            <p>We drive targeted traffic and revenue through data-backed SEO and strategic content. Our approach combines technical optimizations, keyword research, and authority-building content to improve rankings, visibility, and conversions. From e-commerce product pages to B2B thought leadership, we craft tailored solutions that deliver measurable growth.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/S.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Web Design Services</h2>
+            <p>We create stunning, high-converting websites that blend aesthetics with functionality. Our custom designs are tailored to reflect your brand identity while delivering seamless user experiences across all devices.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/W.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>WEB DEVELOPMENT</h2>
+            <p>Our Stack:</p>
+             <ul>
+      <li><strong>Frontend:</strong> React, Vue, Angular</li>
+      <li><strong>Backend:</strong> Node.js, Python, PHP</li>
+      <li><strong>Databases:</strong> MongoDB, PostgreSQL</li>
+    </ul>
+          </div>
+          <div class="project-img">
+            <img src="./img/D.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Maintenance & Support</h2>
+            <p>Maintenance & Support</p>
+            <ul class="coverage-list">
+      <li>✔️ <strong>Security Updates</strong> – Plugins, core files & malware scans</li>
+      <li>✔️ <strong>Performance Boosts</strong> – Speed optimizations & caching</li>
+      <li>✔️ <strong>Backups & Recovery</strong> – Daily/weekly backups</li>
+      <li>✔️ <strong>Content Updates</strong> – Text, images & minor changes</li>
+      <li>✔️ <strong>24/7 Monitoring</strong> – Uptime & error tracking</li>
+    </ul>
+
+    <h3>Choose Your Plan:</h3>
+    <ul class="plan-list">
+      <li>🔧 <strong>Basic Care</strong> – Essentials to keep your site safe</li>
+      <li>⚡ <strong>Performance Pro</strong> – Speed-focused optimizations</li>
+      <li>🛡️ <strong>Full Protection</strong> – All-inclusive security & updates</li>
+    </ul>
+          </div>
+          <div class="project-img">
+            <img src="./img/M.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <h2>E-Commerce Solutions – Our Work</h2>
+            <p>We Build:</p>
+            <ul>
+              <li>• Shopify/WooCommerce/BigCommerce</li>
+              <li>• Headless & custom solutions</li>
+              <li>• Payment & ERP integrations</li>
+            </ul>
+          </div>
+          <div class="project-img">
+            <img src="./img/E.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/A.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>I'm a Front-End Developer with a passion for building responsive, user-friendly web interfaces. I specialize in HTML, CSS, JavaScript, and modern frameworks like React. I enjoy turning complex problems into clean, interactive designs that enhance user experience. Constantly learning and staying updated with the latest web trends, I strive to create intuitive and accessible digital experiences. Let's build something great together.</p>
+        <a href="https://www.linkedin.com/in/john-kyle-sayson-213966301/" class="cta" target="_blank">View LinkedIn Profile</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>63+ 9625998987</h2>
+          
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>johnkylesayson1@gmail.com</h2>
+    
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Brgy,Uno Katipunan Zamoboanga Del Norte</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="./app.js"></script>
 </body>
+
 </html>
